@@ -1,6 +1,6 @@
 
 
-## Getting started with Ansible
+# Getting started with Ansible
 Ansible automates the management of remote systems and controls their desired state.
 
 Most Ansible environments have three main components:
@@ -26,12 +26,12 @@ Playbooks can:
 
 - launch tasks synchronously or asynchronously
 
-# Playbook syntax
+## Playbook syntax
 Playbooks are expressed in YAML format with a minimum of syntax. If you are not familiar with YAML, look at our overview of YAML Syntax and consider installing an add-on for your text editor (see Other Tools and Programs) to help you write clean YAML syntax in your playbooks.
 
 A playbook is composed of one or more ‘plays’ in an ordered list. The terms ‘playbook’ and ‘play’ are sports analogies. Each play executes part of the overall goal of the playbook, running one or more tasks. Each task calls an Ansible module.
 
-# Playbook execution
+## Playbook execution
 A playbook runs in order from top to bottom. Within each play, tasks also run in order from top to bottom. Playbooks with multiple ‘plays’ can orchestrate multi-machine deployments, running one play on your webservers, then another play on your database servers, then a third play on your network infrastructure, and so on. At a minimum, each play defines two things:
 
 - the managed nodes to target, using a pattern
