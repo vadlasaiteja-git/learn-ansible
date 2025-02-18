@@ -1,5 +1,5 @@
-name: Sample
-hosts: localhost
-connection: local
-roles:
-  -demo
+- name: Sample
+  hosts: localhost
+  connection: local
+  roles:
+    -demo
