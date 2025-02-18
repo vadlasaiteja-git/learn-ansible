@@ -28,3 +28,12 @@
   connection: local
   roles:
     - demo
+
+# We can also give variables from command line interface using -e option [ Extra variable]
+# $ansible-playbook 03-vars.yml -e URL=cli.google.com
+#In this case the values of URL is replaced with cli variable i.e cli.google.com at all levels [ Play,Tast and Role]
+# If the same variable name comes in different locations then precedence will come.
+# 1. CLI variable
+# 2. Task variable
+# 3. Role variable
+# 4. Play variable
