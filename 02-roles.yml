@@ -1,0 +1,4 @@
+name: Sample
+hosts: all
+roles:
+  -demo
