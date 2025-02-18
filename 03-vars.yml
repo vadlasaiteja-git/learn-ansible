@@ -37,3 +37,7 @@
 # 2. Task variable
 # 3. Role variable
 # 4. Play variable
+
+#If there is no value for a variable then defaults comes into picture
+  #defaults/         #
+  #main.yml      #  <-- default lower priority variables for this role
