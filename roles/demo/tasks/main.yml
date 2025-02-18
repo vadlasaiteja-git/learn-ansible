@@ -1,3 +1,7 @@
 - name: Print Hello World
   ansible.builtin.debug:
     msg: Hello World
+
+- name: Print Variables
+  ansible.builtin.debug:
+    msg: URL is - {{URL}}
