@@ -88,3 +88,15 @@
 
 #ansible-playbook 03-vars.yml
 
+#Use variables to retrieve the results of running commands
+- name: Variable from task output
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Run uptime command
+      ansible.builtin.shell: uptime
+      register: out
+
+    - name: Print a out
+      ansible.builtin.debug:
+        msg: "{{ out }}"
