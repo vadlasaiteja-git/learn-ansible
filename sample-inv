@@ -1,0 +1,13 @@
+192.168.2.4
+host1.example.com
+
+[APP]
+app1.example.com
+app2.example.com
+
+[DB]
+db1.example.com
+
+[demo]
+a1.example.com
+
