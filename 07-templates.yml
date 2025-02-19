@@ -6,3 +6,5 @@
       ansible.builtin.template:
         src: test.txt
         dest: /tmp/test.txt
+
+#git pull; ansible-playbook 07-templates.yml -e name=Sai
