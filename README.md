@@ -37,3 +37,15 @@ A playbook runs in order from top to bottom. Within each play, tasks also run in
 - the managed nodes to target, using a pattern
 
 - at least one task to execute
+
+
+# Inventory Files
+A file containing list of nodes to configure
+Nodes can be grouped accordingly
+
+List all Nodes
+ansible -i sample-inv all --list-hosts
+
+List nodes according to group
+ansible -i sample-inv DB  --list-hosts
+ansible -i sample-inv APP  --list-hosts
