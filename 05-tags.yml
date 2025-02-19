@@ -14,3 +14,6 @@
         msg: "Vegetable"
       tags: vegetable
 
+#Tags in Ansible allow you to selectively run specific tasks or playbooks instead of executing the entire playbook.
+  #This helps speed up execution and focus on specific tasks.
+
