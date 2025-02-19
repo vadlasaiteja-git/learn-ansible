@@ -1,0 +1,13 @@
+- name: Ignore Errors
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Shell
+      ansible.builtin.shell: cat /etc/passwd | grep john
+      register: out
+      #ignore_errors: yes
+
+    - name: Print
+      ansible.builtin.debug:
+        msg: John user is not there in system
+      when: out.stdout == ""
