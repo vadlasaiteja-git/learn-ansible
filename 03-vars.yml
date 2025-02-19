@@ -85,3 +85,6 @@
     - name: Print OS Distribution
       debug:
         msg: "The distribution is {{ ansible_distribution }} "
+
+#ansible-playbook 03-vars.yml
+
