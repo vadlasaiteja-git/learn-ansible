@@ -66,3 +66,22 @@
 # 1. String
 # 2. Number
 # 3. Boolean ( True/False , Yes/No, )
+
+## Up to now we have seen the user defined variables, where as ansible determines the system config and make those variables available for you to use.
+# Those are called as facts
+
+- name: Print facts
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print OS family
+      debug:
+        msg: "The OS family is {{ ansible_os_family }}"
+
+    - name: Print total memory
+      debug:
+        msg: "Total memory is {{ ansible_memtotal_mb }} MB"
+
+    - name: Print OS Distribution
+      debug:
+        msg: "The distribution is {{ ansible_distribution }} "
