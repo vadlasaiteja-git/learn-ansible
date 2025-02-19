@@ -41,3 +41,28 @@
 #If there is no value for a variable then defaults comes into picture
   #defaults/         #
   #main.yml      #  <-- default lower priority variables for this role
+
+# Variables are now three types
+
+# 1. Normal
+# vars:
+#   URL: example.com
+
+# 2. List
+# vars:
+#   URLS:
+#     - app1.example.com
+#     - app2.example.com
+# {{ URLS[0] }}
+
+# 3. Map
+# vars
+#   URLS:
+#     app1: app1.example.com
+#     app2: app2.example.com
+#{{ URLS.app1 }}
+
+# Variable also have data types
+# 1. String
+# 2. Number
+# 3. Boolean ( True/False , Yes/No, )
