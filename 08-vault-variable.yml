@@ -22,3 +22,5 @@
 #Instead giving password through command line , we can also store the password in a file .vault created in the same directory we are executing the ansible files
 # Then use the command $ ansible-playbook 08-vault-variable.yml --vault-password-file ./.vault
 
+# To encrypt a file use command : $  ansible-vault encrypt 09-vault-file.yml --vault-password-file ./.vault
+# To decrypt a file use command : $ ansible-playbook 09-vault-file.yml --vault-password-file ./.vault
