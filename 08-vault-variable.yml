@@ -16,7 +16,9 @@
     - name: Print Password
       ansible.builtin.debug:
         msg: Password - {{ password }}
-# Command to encrypt: ansible-vault encrypt_string Saiteja@321 --> Copy encrypted string and paste in the password variable.
-# Command to decrypt: ansible-playbook 08-vault-variable.yml --ask-vault-password
+# Command to encrypt: $ ansible-vault encrypt_string Saiteja@321 --> Copy encrypted string and paste in the password variable.
+# Command to decrypt: $ ansible-playbook 08-vault-variable.yml --ask-vault-password
 
+#Instead giving password through command line , we can also store the password in a file .vault created in the same directory we are executing the ansible files
+# Then use the command $ ansible-playbook 08-vault-variable.yml --vault-password-file ./.vault
 
